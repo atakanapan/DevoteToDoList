@@ -13,6 +13,11 @@
 		A4C1C55229840F8C00FD1761 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C1C55129840F8C00FD1761 /* Preview Assets.xcassets */; };
 		A4C1C55429840F8C00FD1761 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1C55329840F8C00FD1761 /* Persistence.swift */; };
 		A4C1C55729840F8C00FD1761 /* Devote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4C1C55529840F8C00FD1761 /* Devote.xcdatamodeld */; };
+		A4C1C5602984100C00FD1761 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C1C55D2984100B00FD1761 /* sound-ding.mp3 */; };
+		A4C1C5612984100C00FD1761 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C1C55E2984100C00FD1761 /* sound-rise.mp3 */; };
+		A4C1C5622984100C00FD1761 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4C1C55F2984100C00FD1761 /* sound-tap.mp3 */; };
+		A4C1C56F29845D0500FD1761 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1C56E29845D0500FD1761 /* Constant.swift */; };
+		A4C1C5712984658A00FD1761 /* HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1C5702984658A00FD1761 /* HideKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,12 @@
 		A4C1C55129840F8C00FD1761 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4C1C55329840F8C00FD1761 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A4C1C55629840F8C00FD1761 /* Devote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devote.xcdatamodel; sourceTree = "<group>"; };
+		A4C1C55D2984100B00FD1761 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		A4C1C55E2984100C00FD1761 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		A4C1C55F2984100C00FD1761 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		A4C1C569298410E000FD1761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4C1C56E29845D0500FD1761 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A4C1C5702984658A00FD1761 /* HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +66,15 @@
 		A4C1C54929840F8C00FD1761 /* Devote */ = {
 			isa = PBXGroup;
 			children = (
+				A4C1C569298410E000FD1761 /* Info.plist */,
 				A4C1C54A29840F8C00FD1761 /* DevoteApp.swift */,
-				A4C1C54C29840F8C00FD1761 /* ContentView.swift */,
+				A4C1C5642984103500FD1761 /* View */,
+				A4C1C5682984108C00FD1761 /* Model */,
+				A4C1C5672984107500FD1761 /* Style */,
+				A4C1C5652984104B00FD1761 /* Extension */,
+				A4C1C5662984106C00FD1761 /* Utility */,
+				A4C1C5632984102800FD1761 /* Sounds */,
 				A4C1C54E29840F8C00FD1761 /* Assets.xcassets */,
-				A4C1C55329840F8C00FD1761 /* Persistence.swift */,
-				A4C1C55529840F8C00FD1761 /* Devote.xcdatamodeld */,
 				A4C1C55029840F8C00FD1761 /* Preview Content */,
 			);
 			path = Devote;
@@ -71,6 +86,56 @@
 				A4C1C55129840F8C00FD1761 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4C1C5632984102800FD1761 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1C55D2984100B00FD1761 /* sound-ding.mp3 */,
+				A4C1C55E2984100C00FD1761 /* sound-rise.mp3 */,
+				A4C1C55F2984100C00FD1761 /* sound-tap.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		A4C1C5642984103500FD1761 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1C54C29840F8C00FD1761 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4C1C5652984104B00FD1761 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1C5702984658A00FD1761 /* HideKeyboard.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A4C1C5662984106C00FD1761 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1C56E29845D0500FD1761 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A4C1C5672984107500FD1761 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		A4C1C5682984108C00FD1761 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4C1C55329840F8C00FD1761 /* Persistence.swift */,
+				A4C1C55529840F8C00FD1761 /* Devote.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C1C55229840F8C00FD1761 /* Preview Assets.xcassets in Resources */,
+				A4C1C5612984100C00FD1761 /* sound-rise.mp3 in Resources */,
 				A4C1C54F29840F8C00FD1761 /* Assets.xcassets in Resources */,
+				A4C1C5622984100C00FD1761 /* sound-tap.mp3 in Resources */,
+				A4C1C5602984100C00FD1761 /* sound-ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +213,9 @@
 			files = (
 				A4C1C55429840F8C00FD1761 /* Persistence.swift in Sources */,
 				A4C1C54D29840F8C00FD1761 /* ContentView.swift in Sources */,
+				A4C1C56F29845D0500FD1761 /* Constant.swift in Sources */,
 				A4C1C55729840F8C00FD1761 /* Devote.xcdatamodeld in Sources */,
+				A4C1C5712984658A00FD1761 /* HideKeyboard.swift in Sources */,
 				A4C1C54B29840F8C00FD1761 /* DevoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +348,10 @@
 				DEVELOPMENT_TEAM = W9N5S557F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,11 +376,10 @@
 				DEVELOPMENT_TEAM = W9N5S557F2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Devote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
